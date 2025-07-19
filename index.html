@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR ARCADE - Interactive Gaming Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Interactive Canvas Background -->
     <canvas id="heroCanvas" class="hero-canvas"></canvas>
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
@@ -22,7 +25,7 @@
                 <h1 class="hero-title">JR ARCADE</h1>
                 <p class="hero-tagline">Where Gaming Dreams Come Alive</p>
             </div>
-            
+
             <!-- Floating Game Icons -->
             <div class="floating-icons">
                 <div class="floating-icon" data-game="action">
@@ -38,56 +41,140 @@
                     <span class="label">Puzzle</span>
                 </div>
             </div>
-            
+
             <!-- Call to Action -->
             <div class="hero-cta">
-                <button class="cta-button primary">
-                    <span class="button-text">Start Playing</span>
-                    <span class="button-glow"></span>
-                </button>
-                <button class="cta-button secondary">
-                    <span class="button-text">Explore Games</span>
-                    <span class="button-glow"></span>
-                </button>
+                <a href="#games-section">
+                    <button class="cta-button primary">
+                        <span class="button-text">Start Playing</span>
+                        <span class="button-glow"></span>
+                    </button>
+                </a>
+                <a href="#games-section">
+                    <button class="cta-button secondary">
+                        <span class="button-text">Explore Games</span>
+                        <span class="button-glow"></span>
+                    </button>
+                </a>
             </div>
-            
+
             <!-- Scroll Indicator -->
             <div class="scroll-indicator">
                 <div class="scroll-arrow"></div>
                 <span class="scroll-text">Scroll to discover</span>
             </div>
         </div>
-        
+
         <!-- Parallax Layers -->
         <div class="parallax-layer layer-1"></div>
         <div class="parallax-layer layer-2"></div>
         <div class="parallax-layer layer-3"></div>
     </section>
-    
+
     <!-- Games Section (for demonstration) -->
-    <section class="games-section">
+    <section class="games-section" id="gamesSection">
         <div class="container">
             <h2>Featured Games</h2>
-            <div class="games-grid">
-                <div class="game-card">
-                    <div class="game-icon">🚨</div>
-                    <h3>Button Panic</h3>
-                    <p>Click it before it's too late</p>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">🏢</div>
-                    <h3>City Sprint</h3>
-                    <p>Unleash Your Inner Runner</p>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">🧠</div>
-                    <h3>Memory Maze</h3>
-                    <p>Can you find the way out?</p>
-                </div>
+            <div class="games-grid"><a href="./Button-Panic/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">🚨</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Button Panic</h3>
+                            <p class="game-description">Click it before it's too late</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./City-Sprint/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">🏢</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">City Sprint</h3>
+                            <p class="game-description">Unleash Your Inner Runner</p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Reflex-Rally/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">🤸🏻‍♀️</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Reflex Rally</h3>
+                            <p class="game-description">Your Reaction Time is the Key</p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Ultimate-Memory-Maze/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">🧠</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Memory Maze</h3>
+                            <p class="game-description">Can you find the way out?</p>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="./Star-Composer/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">⭐</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Star Composer</h3>
+                            <p class="game-description">Create your own star</p>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="./PixelPainter-Duel/index.html">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <div class="game-icon">🎨</div>
+                            <div class="game-overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">Pixel Painter</h3>
+                            <p class="game-description">Paint your own pixel art</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
